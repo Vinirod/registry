@@ -1,0 +1,485 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>2° Ofício de Notas</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+
+       
+
+    .demonstracao-card{
+      width: 870px;
+    }
+
+    .demonstracao-card > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/frente.png') center / cover;
+    }
+
+    .demonstracao-01{
+      width: 870px;
+    }
+
+    .demonstracao-01 > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/img01.jpg') center / cover;
+    }
+
+    .demonstracao-02{
+      width: 870px;
+    }
+
+    .demonstracao-02 > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/img02.jpg') center / cover;
+    }
+
+    .demonstracao-03{
+      width: 870px;
+    }
+
+    .demonstracao-03 > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/img03.jpg') center / cover;
+    }
+
+    .demonstracao-04{
+      width: 870px;
+    }
+
+    .demonstracao-04 > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/img04.jpg') center / cover;
+    }
+
+    .demonstracao-05{
+      width: 870px;
+    }
+
+    .demonstracao-05 > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/img05.jpg') center / cover;
+    }
+
+    </style>
+
+    <script type="text/javascript">
+      function FaleConosco(){
+        location.href="faleconosco.html";
+      }
+    </script>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#paginicial" class="mdl-layout__tab is-active">Página Inicial</a>
+          <a href="#atinotorial" class="mdl-layout__tab">Atividade Notorial</a>
+          <a href="#servicos" class="mdl-layout__tab">Todos serviços</a>
+          <a href="#estrutura" class="mdl-layout__tab">Estrutura</a>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="more-button">
+            <i class="material-icons" role="presentation">add</i>
+            <span class="visuallyhidden">Add</span>
+          </button>
+           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li><a class="mdl-menu__item" href="abrirFirma.html">Abertura de firma</a></li>
+            <li><a class="mdl-menu__item" href="autenticar.html">Autenticação</a></li>
+            <li><a class="mdl-menu__item" href="escriturar.html">Escritura</a></li>
+            <li><a class="mdl-menu__item" href="divadm.html">Divórcio Administrativo</a></li>
+            <li><a class="mdl-menu__item" href="inventario.html">Inventário</a></li>
+            <li><a class="mdl-menu__item" href="procuracao.html">Procuração</a></li>
+            <li><a class="mdl-menu__item" href="recfirma.html">Reconhecimento de Firma</a></li>
+            <li><a class="mdl-menu__item" href="sinalpublico.html">Sinal público</a></li>
+            <li><a class="mdl-menu__item" href="faleconosco.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="paginicial">          
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+              <div class="mdl-card mdl-shadow--2dp demonstracao-card">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                </div>
+                <div class="mdl-card__supporting-text" align="justify">
+                  O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Links Úteis</h4>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://ipva1.fazenda.mg.gov.br/ipvaonline/Home.action">Consulta ao IPVA</a></li>
+                    Saiba tudo sobre o seu IPVA
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www2.copasa.com.br/servicos/2avia2/msginicial.asp">2° Via COPASA</a></li>
+                    Obtenha uma segunda via digital da COPASA
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www.cemig.com.br/pt-br/atendimento/Paginas/default.aspx">2° Via CEMIG</a></li>
+                    Obtenha uma segunda via digital da CEMIG
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www.oi.com.br/portal/site/OiMovel/menuitem.216001c4b37c2b760d6b1033835d02a0/">2° Via TELEFÔNIA (Oi)</a></li>
+                    Obtenha uma segunda via digital telefônica da operadora OI
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www.102busca.com.br/busca/home.asp">Lista Telefônica (102)</a></li>
+                    Tenha acesso a lista telefônica da região
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www.buscacep.correios.com.br/sistemas/buscacep/default.cfm">Busca CEP</a></li>
+                    Verifique diversos CEP's através desse link
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://loterias.caixa.gov.br/wps/portal/loterias/landing">Resultado Loterias</a></li>
+                    Veja os resultados das loterias atualizados
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="https://www.detran.mg.gov.br/">Detran/MG</a></li>
+                    Tenha acesso aos serviços do Detran/MG
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="https://www.policiamilitar.mg.gov.br/portal-pm/principal.action">Polícia Militar</a></li>
+                    Tenha acesso aos serviços da Polícia Militar
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="https://www.policiacivil.mg.gov.br/">Polícia Civil</a></li>
+                    Tenha acesso aos serviços da Polícia Civil
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <li><a href="http://www.pf.gov.br/">Polícia Federal</a></li>
+                    Tenha acesso aos serviços da Polícia Federal
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Endereço e Contato</h5>
+              Rua Bahia - 664 Bairro Centro. Prédio em frente a Igreja Matriz. Buritis - MG. Cep: 38.660-000 <br>
+              (38) 3662-1370
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Horário de Funcionamento</h5>
+                Aberto às 09:00 <br>
+                Até às 17:00
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel answer_list" id="atinotorial">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              
+              <ul class="toc">
+                <h4>Índice da página</h4>
+                <a href="#ativinotorial">Atividade Notorial</a>
+                <a href="#ian">Integra a Atividade Notorial</a>
+                <a href="#tnc">Ao tabelião de notas</a>
+                <a href="#curiosidades">Curiosidades</a>
+              </ul>
+
+              <h5 id="ativinotorial">Atividade Notorial</h5>
+              <p align="justify">
+                O Notário, ou Tabelião, é um profissional do direito, dotado de fé pública, a quem o Poder Público delega o exercício da atividade notorial.
+              </p>
+
+              <h5 id="ian">Integra a Atividade Notorial</h5>
+              <ul align="justify">
+                <li>Formalizar juridicamente a vontade das partes.</li>
+                <li>Intervir nos atos e negócios jurídicos a que as partes devam ou queiram dar forma legal ou autenticidade, autorizando a redação ou redigindo os instrumentos adequados, conservando os originais e expedindo cópias fidedignas de seu conteúdo.</li>
+                <li>Autenticar fatos.</li>
+              </ul>
+
+              <h5 id="tnc">Ao tabelião de notas compete</h5>
+              <ul align="justify">
+                <li>Lavrar escrituras e procurações públicas</li>
+                <li>Lavrar testamentos públicos e aprovar os cerrados</li>
+                <li>Lavrar atas notariais</li>
+                <li>Reconhecer firmas</li>
+                <li>Automaticar fotocópias</li>
+              </ul>
+              <p align="justify">
+                Portanto quando escolher um cartório leve em conta a capacidade daquele profissional que estará lhe atendendo.
+              </p>
+              <p align="justify">
+                O profissional do Direito deve ser capacitado para analisar se os documentos que as partes desejam, serão capazes de produzir os efeitos que as partes necessitam, bem como deve orientar as partes intervindo nos atos e negócios jurídicos para garantir a eficácia e a segurança jurídica.
+              </p>
+              <p align="justify">
+                Fique atento, o bom notário analisa todos os aspectos do negócio jurídico para assegurar que todas as pessoas envolvidas não tenham prejuízos.
+              </p>
+                Papel bonito, etiqueta e carimbo só serão úteis se forem seguros e válidos!!! Observe nossas dicas e se garanta procurando profissionais sérios e capacitados.
+              
+              <h5 id="curiosidades">Curiosidades</h5>
+              <p>
+                Você sabia que:
+              </p>
+
+              <P align="justify">
+                A delegação efetiva para o exercício da função de notário é concedida pelo Poder Público, após o candidato ser submetido a concurso público de provas e títulos.
+              </P>
+              <p align="justify">
+                O serviço do notário é remunerado pelas pessoas que  utilizam seus serviços, com parte do valor que se paga ao cartório. Os emolumentos são fixados pelo Poder Público, razão pela qual podem variar de um Estado para outro.
+              </p>
+              <p align="justify">
+                A palavra Cartório foi cunhada em Portugal para designar o local de trabalho do notário ou tabelião. No Brasil, a palavra passou a designar uma gama maior de competências, incluindo o registro civil de pessoas físicas e jurídicas, o registro de imóveis, o registro de títulos e documentos, o tabelionato de notas, os ofícios de protesto de títulos e também os cartórios judiciais onde tramitam os processos de fóruns de qualquer natureza.
+              </p>
+              <p align="justify">
+                O nome Cartório é um nome genérico que designa uma repartição pública ou privada que tem a custódia de documentos, e que lhe dá fé pública.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="servicos">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <ul class="toc">
+                <h4>Índice da página</h4>
+                <a href="#infoservi">Informações sobre serviços</a>
+                <a href="#cardService">Serviços</a>
+              </ul>
+
+              <h5 id="infoservi">Informações sobre serviços</h5>
+              <p align="justify">
+                Os cartórios, além de suas atribuições, podem prestar serviços de utilidade pública relevante, mediante autorização do Poder Judiciário. Contudo é importante ressaltar que no Estado de Minas Gerais, não é permitido que os cartórios cobrem pelas cópias reprográficas que são tiradas para seus clientes.
+              </p>
+              <p align="justify">
+                 Também não é permitido que os Cartórios utilizem máquinas fotocopiadoras para serviços alheios aos que devem ser prestados na própria serventia. Neste cartório não efetuamos cobrança de fotocópia, pois, a copiadora somente é usada para atender as demandas internas desta serventia.
+              </p>     
+            </div>
+            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+              <div class="mdl-card mdl-cell mdl-cell--12-col">
+                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" id="cardService">
+                  <h4 class="mdl-cell mdl-cell--12-col">Serviços dispostos</h4>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="abrirFirma.html">Abertura de Firmas</a></li>
+                      Veja os procedimentos para efetuar a abertura de uma firma.
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="autenticar.html">Autenticação</a></li>
+                      Veja os procedimentos para obter uma autenticação.
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="escriturar.html">Escritura</a></li>
+                      Conheça os tipos de escrituras existentes e saiba como fazer.
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="divadm.html">Divórcio Administrativo</a></li>
+                      Saiba os requisitos e procedimentos para fazer um divórcio.
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="procuracao.html">Procuração</a></li>
+                      Saiba os requisitos e procedimentos para fazer uma procuração.
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="recfirma.html">Reconhecimento de Firma</a></li>
+                      Saiba os requisitos e procedimentos para reconhecer firma(ou Assinatura)
+                  </div>
+                  <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    <li><a href="sinalpublico.html">Sinal Público</a></li>
+                      Veja os resultados das loterias atualizados
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel answer_list" id="atinotorial">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+
+              <h5 id="ativinotorial">Atividade Notorial</h5>
+              <p align="justify">
+                O Notário, ou Tabelião, é um profissional do direito, dotado de fé pública, a quem o Poder Público delega o exercício da atividade notorial.
+              </p>
+
+              <h5 id="ian">Tabela prática de emolumentos para 2015</h5>
+              <li><a href="#">Fale Conosco</a></li>
+
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel answer_list" id="estrutura">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-01">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-02">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-02">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-03">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-04">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+              <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                <div class="mdl-card mdl-shadow--2dp demonstracao-05">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">2° Ofício de Notas</h2>
+                  </div>
+                    <div class="mdl-card__supporting-text" align="justify">
+                      O Segundo Ofício de Notas em Buritis-MG, oferece com qualidade e segurança diversos serviços, estes que são prestados pela tabeliã, Ana Paula Rocha Espirito Santo. Você pode encontrar mais informações sobre esses serviços aqui mesmo no site.
+                    </div>
+                </div>
+              </section>
+
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer" id="rodape">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Certidões Negativas</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="https://www2.fazenda.mg.gov.br/sol/ctrl/SOL/CDT/SERVICO_829?ACAO=INICIAR">Estaduais - CDT</a></li>
+                <li><a href="http://www.trf1.jus.br/servicos/certidao/?orgao=MG">Justiça Federal</a></li>
+                <li><a href="http://www.tst.jus.br/certidao">Débitos Trabalhistas</a></li>
+                <li><a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=1">Certidão Conjunta R.F</a></li>
+                <li><a href="http://www3.dataprev.gov.br/cws/contexto/cnd">INSS</a></li>
+                <li><a href="http://ccirweb.serpro.gov.br/ccirweb/emissao/formEmissaoCCIRWeb.asp">CCIR</a></li>
+                <li><a href="http://www.receita.fazenda.gov.br/aplicacoes/atspo/certidao/certinter/niitr.asp">ITR</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Serviços</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="abrirFirma.html">Abertura de Firma</a></li>
+                <li><a href="autenticar.html">Autenticação</a></li>
+                <li><a href="escriturar.html">Escritura</a></li>
+                <li><a href="divorcio.html">Divórcio Administrativo</a></li>
+                <li><a href="inventario.html">Inventário</a></li>
+                <li><a href="procuracao.html">Procuração</a></li>
+                <li><a href="recfirma.html">Reconhecimento de Firma</a></li>
+                <li><a href="sinalpublico.html">Sinal Público</a></li>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Links Úteis</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://ipva1.fazenda.mg.gov.br/ipvaonline/Home.action">Consulta ao IPVA</a></li>
+                <li><a href="http://www2.copasa.com.br/servicos/2avia2/msginicial.asp">2° Via COPASA</a></li>
+                <li><a href="http://www.cemig.com.br/pt-br/atendimento/Paginas/default.aspx">2° Via CEMIG</a></li>
+                <li><a href="http://www.oi.com.br/portal/site/OiMovel/menuitem.216001c4b37c2b760d6b1033835d02a0/">2° Via Telefonia</a></li>
+                <li><a href="http://www.102busca.com.br/busca/home.asp">Busca CEP</a></li>
+                <li><a href="http://loterias.caixa.gov.br/wps/portal/loterias/landing">Resultados de Loterias</a></li>
+                <li><a href="https://www.detran.mg.gov.br/">Detran/MG</a></li>
+                <li><a href="https://www.policiamilitar.mg.gov.br/portal-pm/principal.action">Polícia Militar</a></li>
+                <li><a href="https://www.policiacivil.mg.gov.br/">Polícia Civil</a></li>
+                <li><a href="http://www.pf.gov.br/">Polícia Federal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              Mais informações
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://www.facebook.com/Cartoriodo2ooficiodenotasdeburitismg">Facebook</a></li>
+              <li><a href="#">Copyright © 2017 Segundo Ofício de Notas</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a onClick="FaleConosco()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Fale Conosco</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,854 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Escrituras</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+
+    .demonstracao-card{
+      width: 870px;
+    }
+
+    .demonstracao-card > .mdl-card__title{
+      color: #fff;
+      height: 176px;
+      background: url('images/frente.png') center / cover;
+    }
+    </style>
+
+    <script type="text/javascript">
+      function Voltar(){
+        location.href="index.html";
+      }
+    </script>
+
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <ul>
+          <h5>Escritura</h5>
+        </ul>
+        
+      </header>
+        <div>
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <ul class="toc">
+                <h4>Índice da página</h4>
+                <a href="#escriturar">Escrituras</a>
+                <a href="#tpEscritura">Tipos de Escrituras</a>
+                <a href="#lsDoc">Lista de documentos para as mais utilizadas</a>
+                <ul class="toc">
+                  <a href="#ind01">Escritura Pública Declaratório de União Estável</a>
+                  <a href="#ind02">Escritura Pública de Emacipação</a>
+                  <a href="#ind03">Escritura de Revogação de Procuração</a>
+                  <a href="#ind04">Escritura de Pacto Antenupcial</a>
+                  <a href="#ind05">Escritura Declaratória de Únicos Herdeiros</a>
+                  <a href="#ind06">Escritura Pública de Renúncia de Herança</a>
+                </ul>
+                <a href="#docbase">Documentos Básicos</a>
+                <ul class="toc">
+                  <a href="#indi01">Escritura do Imóvel Urbano</a>
+                  <a href="#indi02">Escritura do Imóvel Rural</a>
+                </ul>
+                <a href="#observar">Observações</a>
+              </ul>
+
+              <h5 id="escriturar">Escrituras</h5>
+              <p align="justify">
+                Quando se escuta a palavra "escritura" a maioria das pessoas se lembra da Escritura de sua casa ou de seu lote. Porém existem vários tipos de Escrituras Públicas, além das utilizadas para transferencia de bens imóveis (venda e compra ou doação). Para saber mais sobre outros tipos de Escrituras.
+              </p>
+
+              <h5 id="tpEscritura">Tipos de Escrituras</h5>
+              <p align="justify">
+                <ul align="justify">
+                <li>Compra e Venda</li>
+                <ul>
+                  <li>de bens imóveis</li>
+                  <li>de bens móveis</li>
+                </ul>
+                <li>Doação</li>
+                <ul>
+                  <li>Doação pura</li>
+                  <li>Doação com reserva de usufruto</li>
+                  <li>Doação de antecipação da legítima</li>
+                  <li>Doação de direitos hereditários</li>
+                </ul>
+                <li>Renuncia de Usufruto</li>
+                <li>Inventário</li>
+                <ul>
+                  <li>Inventário negativo</li>
+                  <li>Inventário e partilha de bens</li>
+                  <li>Inventário para adjudicação de bens</li>
+                </ul>
+                <li>Cessão de Direitos Hereditários</li>
+                <li>Doação de Pagamentos</li>
+                <li>Abertura de crédito rotativo, com ou sem garantias</li>
+                <li>Reconhecimento de Dívidas (com ou sem garantias)</li>
+                <li>Convenção de pacto antenupcial</li>
+                <ul>
+                  <li>Regime de separação de bens</li>
+                  <li>Regime de comunhão universal de bens</li>
+                  <li>Regime de participação final nos aquestos</li>
+                </ul>
+                <li>Emacipação</li>
+                <li>Escritura Declaratória</li>
+                <li>Testamento</li>
+                <li>Procuração e Substabelecimento</li>
+                <li>Revogação de mandato</li>
+                <li>Outros tipos</li>
+              </ul>
+              </p>
+
+              <h5 id="ind01">Escritura Pública Declaratória de União Estável</h5>
+
+              <p align="justify">
+                De acordo com o Provimento nº 223/CGJ/2011, é necessária a apresentação dos seguintes documentos para lavratura da escritura pública declaratória de união estável:
+              </p>
+
+              <p align="justify">
+                I - Documento de identidade * dos declarantes;
+              </p>
+
+              <p align="justify">
+                II - Cadastro de Pessoas Físicas - CPF dos declarantes;
+              </p>
+
+              <p align="justify">
+                III - Certidão de nascimento, quando se tratar de pessoa solteira, ou, então, certidão de casamento, com averbação da separação ou do divórcio, se for o caso, expedida há no máximo 90 (noventa) dias, de ambos os conviventes;
+              </p>
+
+              <p align="justify">
+                IV - Certidões, escrituras e outros documentos necessários à comprovação da propriedade dos bens e direitos, se houver.
+              </p>
+
+              <p align="justify">
+                Os documentos necessários à lavratura da escritura pública declaratória de união estável devem ser arquivados na respectiva serventia, no original ou em cópia autenticada.
+              </p>
+
+              <p align="justify">
+                Na escritura pública declaratória de união estável, deverão as partes declarar expressamente a convivência pública, contínua e duradoura, estabelecida com o objetivo de constituição de família, nos termos do artigo 1.723, segunda parte, do Código Civil, bem como que:
+              </p>
+
+              <p align="justify">
+                I - Não incorrem nos impedimentos do artigo 1.521 do Código Civil, salvo quanto ao inciso VI, quando a pessoa casada se achar separada de fato, judicial ou administrativamente;
+              </p>
+
+              <p align="justify">
+                II - Não são casadas ou que não mantêm outro relacionamento com o objetivo de constituição de família.
+              </p>
+
+              <p align="justify">
+                Na escritura pública declaratória de união estável, as partes poderão deliberar de forma clara sobre as relações patrimoniais, nos termos do artigo 1.725 do Código Civil, inclusive sobre a existência de bens comuns e de bens particulares de cada um dos conviventes, descrevendo-os de forma detalhada, com indicação da matrícula e registro imobiliário.
+              </p>
+
+              <p align="justify">
+                Observação: a Constituição Federal garante a todos o mesmo tratamento, razão pela qual também é possível lavrar escritura de união estável quando se tratar de relacionamento homo afetivo. Embora já se saiba que no Estado de São Paulo houve a lavratura de Escritura Pública de União poliafetiva, no Estado de Minas Gerais ainda não existe orientações para a lavratura ou não do referido ato.
+              </p>
+
+              <h5 id="ind02">Escritura Pública de Emancipação</h5>
+
+              <p align="justify">
+                É necessária a apresentação dos seguintes documentos para lavratura da escritura pública de emancipação:
+              </p>
+
+              <p align="justify">
+                I - Documento de identidade * e CPF dos pais;
+              </p>
+
+              <p align="justify">
+                II - Documento de identidade * e CPF e do filho(a) a ser emancipado.
+              </p>
+
+              <p align="justify">
+                II- Certidão de Nascimento do filho;
+              </p>
+
+              <p align="justify">
+                Lembrando que para ser emancipado o menor deve ter 16 anos completos na data da assinatura da escritura.
+              </p>
+              <h5 id="ind03">Escritura DE Revogação de Procuração</h5>
+
+              <p align="justify">
+                A revogação de mandato pode ser unilateral ou bilateral e só poderá ser revogada se a procuração NÃO tiver sido lavrada em caráter irrevogável e irretratável.
+              </p>
+
+              <p align="justify">
+                Revogação Unilateral: É quando somente o outorgante resolve revogar/cancelar a procuração.
+              </p>
+
+              <p align="justify">
+                Revogação Bilateral: É quando os dois interessados resolvem de comum acordo revogar/cancelar a procuração.
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>Para a REVOGAÇÃO UNILATERAL de mandato é necessária à apresentação dos seguintes documentos:</p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  I - Documento de identidade * e CPF do Outorgante.
+                </ul>
+              </p>
+
+              <p align="justify">
+                Após a revogação deverá o outorgante NOTIFICAR o procurador (outorgado) através do Cartório de Títulos e Documentos para que a revogação surta efeito.
+              </p>
+
+              <p align="justify">
+                Para a REVOGAÇÃO BILATERAL de mandato é necessária à apresentação dos seguintes documentos:
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>I - Documento de identidade * e CPF do Outorgante (quem passa os poderes) e do Outorgado (quem recebe os poderes).</p>
+                </ul>
+              </p>
+              <h5 id="ind04">Escritura de Pacto Antenupcial</h5>
+
+              <p align="justify">
+                O regime legal do casamento, de acordo com o Código Civil vigente, é o da Comunhão Parcial de Bens, caso o casal queira adotar outro regime que não o legal, como exemplo a Comunhão Universal de Bens ou o da Separação de Bens, será necessária a lavratura do Pacto Antenupcial.
+              </p>
+
+              <p align="justify">
+                De acordo com o Código Civil, o Pacto Antenupcial, somente poderá ser lavrado por escritura pública e só se torna eficaz quando se efetivar o casamento.
+              </p>
+
+              <p align="justify">
+                Os documentos necessários são:
+              </p>
+
+              <p align="justify">
+                I - Documento de identidade * e CPF do casal.
+              </p>
+
+              <p align="justify">
+                II – Caso um dos cônjuges seja divorciado deverá ser apresentado à certidão de casamento com averbação de divórcio. Se for viúvo certidão de casamento e óbito do falecido.
+              </p>
+
+              <p align="justify">
+                III – Além dessa documentação será solicitado endereço, profissão e o regime que irá vigorar o casamento do casal.
+              </p>
+
+              <p align="justify">
+                FIQUE ATENTO:
+              </p>
+
+              <p align="justify">
+                Escritura de Pacto Antenupcial OU Escritura Declaratória de qualquer natureza não são provas da existêcia do casamento.
+              </p>
+
+              <p align="justify">
+                Escritura de Pacto PÓS NUPCIAL ou qualquer outro documento que objetive a alteração regime do casamento, caso venha(m) a ser lavrado(s), não produzirá(ão) efeito(s) legal(is) caso não seja(m) precedido(s) por autorização judicial.
+              </p>
+
+              <p align="justify">
+                Pois, após a realização do casamento, o regime somente poderá ser alterado, em situações especiais, mediante autorização Judicial. (§2º, art. 1.639, Código Civil).
+              </p>              
+
+              <h5 id="ind05">Escritura Pública de Únicos herdeiros</h5>
+
+              <p align="justify">
+                Essa escritura nada mais é, que uma declaratória solicitada muitas vezes por órgãos como INSS ou Instituições de Seguro DPVAT, onde é necessário que os herdeiros do falecido declarem que são seus únicos herdeiros.
+              </p>
+
+              <p align="justify">
+                I - Documento de identidade * e CPF do Declarante.
+              </p>
+
+              <p align="justify">
+               II - Documento de identidade * e CPF de 02 testemunhas, lembrando que as testemunhas não pode ter parentesco com o declarante.
+              </p>
+
+              <p align="justify">
+                III – Certidão de óbito do falecido.
+              </p>
+
+              <p align="justify">
+                IV – Caso o(s) Renunciante(s) seja(m) casado(s), divorciado(s) ou viúvo(s) deverá(ão) apresentar o comprovante do estado civil, sendo necessária a assinatura do cônjuge na maioria das situações (consulte o cartório).
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>Caso seja divorciado – Certidão de casamento com averbação do divórcio.</p>
+                </ul>
+                
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>Caso seja casado – Certidão de casamento.</p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                 <ul>
+                  <p>Caso seja viúvo – Certidão de casamento e de óbito do cônjuge.</p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                 Para saber sobre a documentação necessária a ser apresentada para outras escrituras, entre em contato conosco.
+              </p>
+
+              <h5 id="ind06">Escritura Pública de Renúncia de Herança</h5>
+              
+              <P align="justify">
+                Pelo Código Civil, somente se renuncia herança de forma expressa através de Escritura Pública ou termo Judicial.
+              </P>
+
+              <P align="justify">
+                Não sendo possível aceitar ou renunciar a herança em parte, sob condição ou a termo (ou seja não é possível constar que se renuncia para beneficiar determinada pessoa ou caso aconteça determinado fato) e uma vez feita a renúncia esta será IRREVOGÁVEL, na forma do art. 1.812, do Código Civil.
+              </P>
+
+              <P align="justify">
+                I - Documento de identidade * e CPF do(s) Renunciante(s).
+              </P>
+
+              <P align="justify">
+                II - Certidão de óbito do falecido.
+              </P>
+
+              <P align="justify">
+                IV – Caso o(s) Renunciante(s) seja(m) casado(s), divorciado(s) ou viúvo(s) deverá(ão) apresentar o comprovante do estado civil, sendo necessária a assinatura do cônjuge na maioria das situações (consulte o cartório).
+              </P>
+
+              <P align="justify">
+                <ul>
+                  <p>
+                    Caso seja divorciado – Certidão de casamento com averbação do divórcio.
+                  </p>
+                </ul>
+              </P>
+
+              <P align="justify">
+                <ul>
+                  <p>
+                    Caso seja casado – Certidão de casamento.
+                  </p>
+                </ul>
+
+              </P>
+
+              <P align="justify">
+                <ul>
+                  <p>
+                    Caso seja viúvo – Certidão de casamento e de óbito do cônjuge.
+                  </p>
+                </ul>
+
+              </P>
+
+              <p align="justify">
+                São aceitos como documento de identidade: RG, CTPS, CNH com foto, Passaporte, identidades militares e identidades profissionais tais como CREA, OAB, CRM, CRESCI, COREN, etc.
+              </p>
+
+              <h5 id="docbase">Documentos Básicos</h5>
+
+              <p>
+                Abaixo será ilustrado os requisitos e procedimentos de requisitos para venda, compra e doação de imóveis.
+              </p>
+
+              <h5 id="indi01">Para escritura de imóvel urbano</h5>
+
+              <p align="justify">
+                Se os  vendedores (ou doadores)  e compradores (ou donatário)  forem PESSOAS FÍSICAS:
+              </p>
+
+              <p align="justify">
+                a) Documentos pessoais:
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Documentos de identidade * e CPF de todas as pessoas (Compradorese Vendendores ou Doadores e Donatários);
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Documentos que comprovem o Estado Civil (por exemplo: Certidão de casamento das pessoas que forem casadas, Certidão de casamento com averbação de Divorcio dos que forem divorciados, etc.) ;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    Se a alguma das partes for CASADA e se houver pacto pré-nupcial (este deverá ser apresentado) ;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Certidões fiscais <a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2">(CND Federal pessoa fisica)</a>, em nome dos Vendedor(a)(s) (ou doadores), dentro do prazo de validade. Estas certidões voce mesmo pode emitir pela internet clique em cima do nome de cada certidão para emitir. Se tiver dúvidas entre em contato.
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Certidões de feitos ajuizados Cível e Criminal (Justiça Comum) e Cível e Criminal (Juizado Especial),Certidão de Débitos Trabalhistas <a href="http://www.tst.jus.br/certidao">CNDT</a> e <a href="https://portal.trf1.jus.br/sjmg/">Justiça Federal</a> EM NOME DOS VENDEDORES (ou doadores); expedidas a menos de 30 dias expedidas no local de residência dos vendedores e no município onde está situado o imóvel. (estas certidões são obtidas no FÓRUM ou CARTÓRIOS DE DISTRIBUIÇÃO) (veja a observação 1, no final);
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    PROCURAÇÃO ORIGINAL, no caso da compra ou venda se realizar através de procuração;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    Documentos de identidade * e CPF do procurador;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                Observação: As partes poderão se fazer representar por PROCURAÇÃO PÚBLICA, que contenha poderes para o ato e a identificação do imóvel objeto da venda;
+              </p>
+
+              <p align="justify">
+                b) Documentos do imóvel:
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    Certidões de matrícula, ônus e ações pessoais reipersecutórias, (expedidas a menos de 30 dias), obtidos no Cartório de Registro de Imóveis competente.  (veja a observação 1, no final);
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    No caso de compra e venda
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    <ul>
+                      <p align="justify">
+                        Certidões de matrícula, ônus e ações pessoais reipersecutórias, (expedidas a menos de 30 dias), obtidos no Cartório de Registro de Imóveis competente.  (veja a observação 1, no final);
+                      </p>
+                    </ul>
+                  </p>
+                </ul>
+              </p>
+              <p align="justify">
+                <ul>
+                  <p>
+                    No caso de Doação
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    <ul>
+                      <p align="justify">
+                        ITCD e Certidão de Desoneração Fiscal e comprovante de pagamento caso não seja isento (Documento de Arrecadação Estadual-DAE), (na hipótese de existir "menor de idade"  adquirindo bem imóvel, existe incidencia deste imposto (em MG), por haver pressuposto de doação de dinheiro, já que menores não possuem renda);
+                      </p>
+                    </ul>
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                Se houver PESSOA JURÍDICA que participa da compra e venda, deverão ser apresentados os seguintes documentos:
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Contrato Social, Estatuto Social ou Lei de criação e alterações (cópias autenticadas com selo da Junta Comercial competente ou do Cartório de Registro de Pessoas Jurídicas)
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Ata de Eleição e posse da Diretoria, registrada. (certidão expedida pelo Cartório de Registro de Pessoas Jurídicas competente) ou Certidão Simplificada da Junta Comercial, expedida a menos de 30 dias;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    Cartão do CNPJ;
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p>
+                    CND Federal pessoa jurídica, <a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2">clique aqui</a>.
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    Documentos de identidade e CPF dos responsáveis pela empresa/associação (autenticados).
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                <ul>
+                  <p align="justify">
+                    SE a pessoa jurídica não for imobiliária e estiver vendendo, deverá também ser apresentada a Certidão Negativa do INSS (marque a opção 4 - as Outras Finalidades do art. 47 da Lei nº 8212, de 24/07/91), <a href="https://www.jusbrasil.com.br/topicos/11348078/artigo-47-da-lei-n-8212-de-24-de-julho-de-1991">clique aqui</a>;
+                  </p>
+                </ul>
+              </p>
+
+              <h5 id="indi02">Para escritura de imóvel rural</h5>
+
+              <p align="justify">
+                1) Se os  vendedores (ou doadores)  e compradores (ou donatário)  forem PESSOAS FÍSICAS:
+              </p>
+
+              <p align="justify">
+                a) Documentos pessoais:
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Documentos de identidade * e CPF de todas as pessoas (Compradorese Vendendores ou Doadores e Donatários);
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Documentos que comprovem o Estado Civil (por exemplo: Certidão de casamento das pessoas que forem casadas, Certidão de casamento com averbação de Divorcio dos que forem divorciados, etc.) ;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Se a alguma das partes for CASADA e se houver pacto pré-nupcial (este deverá ser apresentado) ;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Certidões fiscais <a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2">(CND Federal pessoa fisica)</a>, em nome dos Vendedor(a)(s) (ou doadores), dentro do prazo de validade. Estas certidões voce mesmo pode emitir pela internet clique em cima do nome de cada certidão para emitir. Se tiver dúvidas entre em contato.
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Certidões de feitos ajuizados Cível e Criminal (Justiça Comum) e Cível e Criminal (Juizado Especial),Certidão de Débitos Trabalhistas <a href="http://www.tst.jus.br/certidao">CNDT</a> e <a href="http://www.tst.jus.br/certidao">CNDT</a> e <a href="https://portal.trf1.jus.br/sjmg/">Justiça Federal</a> EM NOME DOS VENDEDORES (ou doadores); expedidas a menos de 30 dias expedidas no local de residência dos vendedores e no município onde está situado o imóvel. (estas certidões são obtidas no FÓRUM ou CARTÓRIOS DE DISTRIBUIÇÃO) (veja a observação 1, no final);
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    PROCURAÇÃO ORIGINAL, no caso da compra ou venda se realizar através de procuração;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Documentos de identidade * e CPF do procurador;
+                  </p>
+                </ul>
+              </p>
+
+              <P align="justify">
+                Observação: As partes poderão se fazer representar por PROCURAÇÃO PÚBLICA, que contenha poderes para o ato e a identificação do imóvel objeto da venda;
+              </P>
+
+              <P align="justify">
+                b) Documentos do imóvel:
+              </P>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Certidões de matrícula, ônus e ações pessoais reipersecutórias, (expedidas a menos de 30 dias), obtidos no Cartório de Registro de Imóveis competente. (veja a observação 2, no final);
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Comprovante de pagamento do ITR dos últimos 5 anos OU <a href="http://www.receita.fazenda.gov.br/aplicacoes/atspo/certidao/certinter/niitr.asp">Certidão Negativa do Imóvel Rural</a> (emitida através do site da Receita Federal) em nome do atual proprietário.
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    CCIR- 2006/2007/2008/2009,  em nome do atual proprietário e QUITADO (observe que deve ser pago nos bancos indicados no próprio CCIR), <a href="http://www.incra.gov.br/noticias/pagamento-da-taxa-de-servico-do-ccir-na-rede-bancaria-e-alterado">clique aqui</a>.
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    para imóveis rurais pode ser necessária a apresentação de Georreferenciamento. Existem imóveis que ainda não necessitam estar Georreferenciados, PERGUNTE A(O) FUNCIONÁRIO(A) DO CARTÓRIO COMO PROCEDER.
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Observação: A RESERVA FLORESTA, deve ser averbada na matrícula, antes do registro de ato(s) de Transmissão ou Desmembramento(s), conforme Recomendação do Ministério Público de Minas Gerais e liminar concedida pelo Conselho Nacional de Justiça. (Se tiver dúvidas ou necessitar de esclarecimentos sobre RESERVA FLORESTAL entre em contato com o Cartório.)
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    No caso de compra e venda
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p>
+                    <ul>
+                      <p align="justify">
+                        Guia de ITBI e Comprovante de pagamento (Documento de Arrecadação Municipal-DAM), obtidos na Prefeitura Municipal. (veja a observação 2, no final);
+                      </p>
+                    </ul>
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    No caso de Doação
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p>
+                    <ul>
+                      <p align="justify">
+                        ITCD e Certidão de Desoneração Fiscal e comprovante de pagamento caso não seja isento (Documento de Arrecadação Estadual-DAE), (na hipótese de menor estar adquirindo imóvel existe incidencia deste imposto, por haver pressuposto de doação de dinheiro);
+                      </p>
+                    </ul>
+                  </p>
+                </ul>
+              </p>
+
+              <p align="justify">
+                 2) Se houver PESSOA JURÍDICA que participa da compra e venda, deverão ser apresentados os seguintes documentos:
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Contrato Social, Estatuto Social ou Lei de criação e alterações (cópias autenticadas com selo da Junta Comercial competente ou do Cartório de Registro de Pessoas Jurídicas). Se a pessoa Jurídica for empresa registrada na Junta Comercial de Minas Gerais, a Certidão pode ser obtida através da internet. <a href="https://www.jucemg.mg.gov.br/ibr/informacoes+passo-a-passo-servicos+passo-a-passo-simplificada-digital">clique aqui</a>.
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Ata de Eleição e posse da Diretoria, registrada. (certidão expedida pelo Cartório de Registro de Pessoas Jurídicas competente) ou⁮ Certidão Simplificada da Junta Comercial, expedida a menos de 30 dias;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Cartão do CNPJ;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    CND Federal pessoa jurídica, <a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=2">clique aqui</a>;
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    Documentos de identidade e CPF dos responsáveis pela empresa/associação (autenticados).
+                  </p>
+                </ul>
+              </p>
+
+              <p>
+                <ul>
+                  <p align="justify">
+                    SE a pessoa jurídica não for imobiliária e estiver vendendo, deverá também ser apresentada a Certidão Negativa do INSS (marque a opção 4 - as Outras Finalidades do art. 47 da Lei nº 8212, de 24/07/91), <a href="https://www.jusbrasil.com.br/topicos/11348078/artigo-47-da-lei-n-8212-de-24-de-julho-de-1991">clique aqui</a>;
+                  </p>
+                </ul>
+              </p>
+
+              <h5 id="observar">Observações</h5>
+
+              <p align="justify">
+                São aceitos como documento de identidade: RG, CTPS, CNH com foto, Passaporte, identidades militares e identidades profissionais tais como CREA, OAB, CRM, CRESCI, COREN, etc.
+              </p>
+              <p align="justify">
+                Caso você prefira, se você for lavrar uma escritura neste cartório, entre em contato conosco, que providenciaremos para você as certidões. (NENHUM VALOR ADICIONAL SERÁ COBRADO PELA AJUDA NA OBTENÇÃO DE CERTIDÕES OU DOCUMENTOS, somente serão repassados -se houver- os custos das próprias certidões  e despesas postais, tudo mediante prestação de contas).
+              </p>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer" id="rodape">
+            <div class="mdl-mega-footer--middle-section">
+              <div class="mdl-mega-footer--drop-down-section">
+                <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer--heading">Certidões Negativas</h1>
+                <ul class="mdl-mega-footer--link-list">
+                  <li><a href="https://www2.fazenda.mg.gov.br/sol/ctrl/SOL/CDT/SERVICO_829?ACAO=INICIAR">Estaduais - CDT</a></li>
+                  <li><a href="http://www.trf1.jus.br/servicos/certidao/?orgao=MG">Justiça Federal</a></li>
+                  <li><a href="http://www.tst.jus.br/certidao">Débitos Trabalhistas</a></li>
+                  <li><a href="http://www.receita.fazenda.gov.br/Aplicacoes/ATSPO/Certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=1">Certidão Conjunta R.F</a></li>
+                  <li><a href="http://www3.dataprev.gov.br/cws/contexto/cnd">INSS</a></li>
+                  <li><a href="http://ccirweb.serpro.gov.br/ccirweb/emissao/formEmissaoCCIRWeb.asp">CCIR</a></li>
+                  <li><a href="http://www.receita.fazenda.gov.br/aplicacoes/atspo/certidao/certinter/niitr.asp">ITR</a></li>
+                </ul>
+              </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Serviços</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="abrirFirma.html">Abertura de Firma</a></li>
+                <li><a href="autenticar.html">Autenticação</a></li>
+                <li><a href="escriturar.html">Escritura</a></li>
+                <li><a href="divorcio.html">Divórcio Administrativo</a></li>
+                <li><a href="inventario.html">Inventário</a></li>
+                <li><a href="procuracao.html">Procuração</a></li>
+                <li><a href="recfirma.html">Reconhecimento de Firma</a></li>
+                <li><a href="sinalpublico.html">Sinal Público</a></li>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Links Úteis</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://ipva1.fazenda.mg.gov.br/ipvaonline/Home.action">Consulta ao IPVA</a></li>
+                <li><a href="http://www2.copasa.com.br/servicos/2avia2/msginicial.asp">2° Via COPASA</a></li>
+                <li><a href="http://www.cemig.com.br/pt-br/atendimento/Paginas/default.aspx">2° Via CEMIG</a></li>
+                <li><a href="http://www.oi.com.br/portal/site/OiMovel/menuitem.216001c4b37c2b760d6b1033835d02a0/">2° Via Telefonia</a></li>
+                <li><a href="http://www.102busca.com.br/busca/home.asp">Busca CEP</a></li>
+                <li><a href="http://loterias.caixa.gov.br/wps/portal/loterias/landing">Resultados de Loterias</a></li>
+                <li><a href="https://www.detran.mg.gov.br/">Detran/MG</a></li>
+                <li><a href="https://www.policiamilitar.mg.gov.br/portal-pm/principal.action">Polícia Militar</a></li>
+                <li><a href="https://www.policiacivil.mg.gov.br/">Polícia Civil</a></li>
+                <li><a href="http://www.pf.gov.br/">Polícia Federal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              Mais informações
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://www.facebook.com/Cartoriodo2ooficiodenotasdeburitismg">Facebook</a></li>
+              <li><a href="#">Copyright © 2017 Segundo Ofício de Notas</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a onClick="Voltar()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Voltar</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
